@@ -5,6 +5,11 @@ import './styles.css';
 export const Private = () => {
   const auth = useContext(AuthContext);
 
+  const handleLogout = async () => {
+    await auth.signout();
+    window.location.href = window.location.href;
+  };
+
   return (
     <div className="container">
       <div className="container-profile">
@@ -30,6 +35,13 @@ export const Private = () => {
                   Your <b>E-mail</b>
                 </span>
                 <output className="output" />
+              </div>
+              <div className="wrap-logout">
+                {auth.user && (
+                  <button className="logout-btn" onClick={handleLogout}>
+                    Logout
+                  </button>
+                )}
               </div>
             </div>
           </form>
