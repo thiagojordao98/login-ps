@@ -1,6 +1,5 @@
 import { useContext } from 'react';
-import { Route, Routes, Link } from 'react-router-dom';
-import { Home } from './pages/Home';
+import { Route, Routes } from 'react-router-dom';
 import { Private } from './pages/Private';
 import { Login } from './pages/Login';
 import { RequireAuth } from './contexts/Auth/RequireAuth';
@@ -18,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
         <Route
           path="/private"
           element={
