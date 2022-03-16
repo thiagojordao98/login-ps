@@ -11,21 +11,21 @@
 
 Neste projeto foram usadas essas tecnologias:
 
-- ✔️ [TypeScript](https://www.typescriptlang.org/)
+ - ✔️ [TypeScript](https://www.typescriptlang.org/)
 
-- ✔️ [React](https://pt-br.reactjs.org/)
+ - ✔️ [React](https://pt-br.reactjs.org/)
 
-- ✔️ [ReactHooks](https://pt-br.reactjs.org/)
+ - ✔️ [ReactHooks](https://pt-br.reactjs.org/)
 
-- ✔️ [ReactRouter](https://reactrouter.com/)
+ - ✔️ [ReactRouter](https://reactrouter.com/)
 
-- ✔️ [ContextAPI](https://pt-br.reactjs.org/docs/context.html)
+ - ✔️ [ContextAPI](https://pt-br.reactjs.org/docs/context.html)
 
 <br>
 
 ## ⚙ Produção
 
-Acesse a aplicação [aqui](https://app.netlify.com/sites/login-ps/settings/domain)
+Acesse a aplicação [aqui](https://login-ps.netlify.app/)
 
 ## Clonar o repositório
 
