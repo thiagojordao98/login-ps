@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Private } from './pages/Private';
+import { Login } from './pages/Login';
 import { RequireAuth } from './contexts/Auth/RequireAuth';
 import { AuthContext } from './contexts/Auth/AuthContext';
 import './app.css';
@@ -16,15 +17,8 @@ function App() {
 
   return (
     <div className="App">
-      <header>
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/private">Sign In</Link>
-          {auth.user && <button onClick={handleLogout}>Sair</button>}
-        </nav>
-      </header>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
         <Route
           path="/private"
           element={
