@@ -28,13 +28,13 @@ export const Private = () => {
                 <span className="name-title">
                   Your <b>Name</b>
                 </span>
-                <output className="output" />
+                <p className="output">{auth.user?.name}</p>
               </div>
               <div className="wrap-input">
                 <span className="email-title">
                   Your <b>E-mail</b>
                 </span>
-                <output className="output" />
+                <p className="output">{auth.user?.email}</p>
               </div>
               <div className="wrap-logout">
                 {auth.user && (

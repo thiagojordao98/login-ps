@@ -1,8 +1,9 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: process.env.REACT_APP_API
+    baseURL : 'https://frontendproject.b2bit.company/account',
 });
+
 
 export const useApi = () => ({
     validateToken: async (token: string) => {
@@ -17,7 +18,8 @@ export const useApi = () => ({
             user: { id: 3, name: 'Miguel', email: 'miguel@gmail.com' },
             token: '123456789'
         };
-        const response = await api.post('/signin', { email, password });
+        const response = await api.post('/tokens/', { email, password });
+        console.log(response.data)
         return response.data;
     },
     logout: async () => {
